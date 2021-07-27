@@ -1,3 +1,3 @@
 steps:
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['compute', 'scp', '/dev/null', 'airflow:/opt/airflow/dags']
+  args: ['compute', 'scp', '--project="data-engineer-06-2021"','--zone="europe-west1-b"', '/dev/null', 'airflow:/opt/airflow/dags']
